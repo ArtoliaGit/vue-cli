@@ -188,6 +188,7 @@ module.exports = (api, options) => {
     }, projectDevServerOptions, {
       https: useHttps,
       proxy: proxySettings,
+      port,
       // eslint-disable-next-line no-shadow
       before (app, server) {
         // launch editor support.
